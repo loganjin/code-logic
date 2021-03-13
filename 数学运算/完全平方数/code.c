@@ -1,3 +1,6 @@
+//如何求完全平方数
+//如何求一个数中某个数字出现的次数
+
 #include <stdio.h>
 #include <math.h>
 
