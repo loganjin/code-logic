@@ -37,3 +37,40 @@ int main()
 105 500
 输出样例：
 cnt = 6
+
+
+
+int IsTheNumber ( const int N )
+{
+    if(N<0)
+    {
+        return 0;
+    }
+
+    int m=(int)sqrt(N);//sqrt()：求一个数的开方数。
+    
+    int n=N;
+    int temp[10]={0};
+    int i;
+
+    
+    if(m*m==n)
+    {
+        while(n>0)
+        {
+            i=n%10;// %10:两整数相除的余数部分。eg:144%10=4。
+            temp[i]+=1;
+            n/=10;// /10:两整数相除的整数部分。eg:144/10=14。
+            
+            if(temp[i]==2)
+            {
+                return 1;
+            }
+        }
+        return 0;//没有这行代码有的数（是完全平方数但数中不是俩个数字相等）会导致程序不能完成。
+    }
+    else
+    {
+        return 0;
+    }
+}
