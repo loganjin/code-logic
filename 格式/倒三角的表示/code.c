@@ -14,7 +14,7 @@ int main(void)
         }
         for(i=3-j;i>0;i--)//每行*+空格数：3、2、1、0
         {
-            printf("* ");//
+            printf("* ");
         }
         printf("*");//末尾的*没有空格
         printf("\n");
