@@ -1,3 +1,5 @@
+//判断一个数为素数的方法
+
 #include <stdio.h>
 #include <math.h>
 
